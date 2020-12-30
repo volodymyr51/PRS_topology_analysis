@@ -14,6 +14,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1mNdQv4dbs6LmHdETNDgGFXo7tn" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -22,6 +25,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -69,21 +73,33 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="828" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609338024632" />
-    <state width="1017" height="281" key="GridCell.Tab.0.bottom" timestamp="1609338435766">
+    <state x="1159" y="366" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1609341451363">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1017" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609338435766" />
-    <state width="1017" height="281" key="GridCell.Tab.0.center" timestamp="1609338435766">
+    <state x="1159" y="366" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609341451363" />
+    <state x="1053" y="122" key="CommitChangelistDialog2" timestamp="1609341604107">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1017" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609338435766" />
-    <state width="1017" height="281" key="GridCell.Tab.0.left" timestamp="1609338435766">
+    <state x="1053" y="122" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1609341604107" />
+    <state x="972" y="100" width="855" height="847" key="DiffContextDialog" timestamp="1609341665931">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1017" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609338435766" />
-    <state width="1017" height="281" key="GridCell.Tab.0.right" timestamp="1609338435766">
+    <state x="972" y="100" width="855" height="847" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609341665931" />
+    <state width="1017" height="281" key="GridCell.Tab.0.bottom" timestamp="1609341480516">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1017" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609338435766" />
+    <state width="1017" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609341480516" />
+    <state width="1017" height="281" key="GridCell.Tab.0.center" timestamp="1609341480516">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1017" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609341480516" />
+    <state width="1017" height="281" key="GridCell.Tab.0.left" timestamp="1609341480516">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1017" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609341480516" />
+    <state width="1017" height="281" key="GridCell.Tab.0.right" timestamp="1609341480516">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1017" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609341480516" />
   </component>
 </project>
