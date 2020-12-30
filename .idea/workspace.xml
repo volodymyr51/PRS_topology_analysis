@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="09174d77-4cb1-47df-afd2-3fc2824be971" name="Default Changelist" comment="" />
+    <list default="true" id="09174d77-4cb1-47df-afd2-3fc2824be971" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modelling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Math.py" beforeDir="false" afterPath="$PROJECT_DIR$/Math.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,9 +21,15 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="550d34b0c359ac017326a47fb449df6c95b17b18" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1mNdQv4dbs6LmHdETNDgGFXo7tn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -26,6 +38,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Vovich\Documents\PRS\SuperExcessiveDeBrujin" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -52,6 +70,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.Main" />
+        <item itemvalue="Python.Main" />
+        <item itemvalue="Python.Main" />
+        <item itemvalue="Python.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -66,7 +87,30 @@
       <option name="presentableId" value="Default" />
       <updated>1609337969386</updated>
     </task>
+    <task id="LOCAL-00001" summary="Some minor git xml changes">
+      <created>1609341676440</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1609341676440</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Some minor git xml changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some minor git xml changes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="828" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609338024632">
@@ -77,29 +121,41 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1159" y="366" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609341451363" />
-    <state x="1053" y="122" key="CommitChangelistDialog2" timestamp="1609341604107">
+    <state x="1053" y="122" key="CommitChangelistDialog2" timestamp="1609350208292">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1053" y="122" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1609341604107" />
+    <state x="1053" y="122" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1609350208292" />
     <state x="972" y="100" width="855" height="847" key="DiffContextDialog" timestamp="1609341665931">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="972" y="100" width="855" height="847" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609341665931" />
-    <state width="1017" height="281" key="GridCell.Tab.0.bottom" timestamp="1609341480516">
+    <state width="1899" height="281" key="GridCell.Tab.0.bottom" timestamp="1609350208301">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1017" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609341480516" />
-    <state width="1017" height="281" key="GridCell.Tab.0.center" timestamp="1609341480516">
+    <state width="1899" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609350208301" />
+    <state width="1899" height="281" key="GridCell.Tab.0.center" timestamp="1609350208301">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1017" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609341480516" />
-    <state width="1017" height="281" key="GridCell.Tab.0.left" timestamp="1609341480516">
+    <state width="1899" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609350208301" />
+    <state width="1899" height="281" key="GridCell.Tab.0.left" timestamp="1609350208301">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1017" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609341480516" />
-    <state width="1017" height="281" key="GridCell.Tab.0.right" timestamp="1609341480516">
+    <state width="1899" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609350208301" />
+    <state width="1899" height="281" key="GridCell.Tab.0.right" timestamp="1609350208301">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1017" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609341480516" />
+    <state width="1899" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609350208301" />
+    <state x="991" y="259" key="Vcs.Push.Dialog.v2" timestamp="1609342420109">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="991" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609342420109" />
+    <state x="1072" y="260" key="VcsDiffUtil.ChangesDialog" timestamp="1609342380456">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1072" y="260" key="VcsDiffUtil.ChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609342380456" />
+    <state x="771" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609348429915">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="771" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609348429915" />
   </component>
 </project>

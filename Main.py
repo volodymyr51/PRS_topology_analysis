@@ -9,3 +9,5 @@ if __name__ == "__main__":
     MA, next = Math.FloydPathReconstruct(Topologies.TestTopology.cluster)
     print(next)
     print(Math.Betweeness(next))
+    Math.PrintProperties(1, Topologies.TestTopology.cluster)
+    np.argmax()

@@ -22,7 +22,7 @@ def Cost(MA, MD):
     return len(MA) * Diameter(MD) * Degree(MA)
 
 
-@njit
+
 def ToDistanceMatrix(MA):
     distance = np.zeros(shape=(len(MA), len(MA)), dtype=np.int64)
     distance = np.copy(MA)
@@ -104,3 +104,15 @@ def ToBetweenessVector(MA):
             distance[j, i] = distance[i, j]
 
     return betweeness
+
+
+def PrintProperties(step, cluster):
+    dist = ToDistanceMatrix(cluster)
+    D = Diameter(dist)
+    S = Degree(cluster)
+    AvgD = AverageDiameter(dist)
+    C = Cost(cluster, dist)
+    T = Traffic(cluster, dist)
+    print(
+      "Step {}: Nodes {}, Diameter: {}, Degree {}, Average Diameter {}, Cost {}, Traffic {}".format(step, len(cluster),
+                                                                                                    D, S, AvgD, C, T))
