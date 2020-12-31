@@ -4,6 +4,11 @@ import Topologies.TestTopology
 # LLVM compiler
 from numba import njit
 
+def DropAndTest(MA, betweeness):
+    max = np.argmax(betweeness)
+    MA = np.delete(MA, max, 0)
+    MA = np.delete(MA, max, 1)
+    Math.PrintProperties(-1, MA)
+    return MA
 
-#TODO: Drop nodes and test new parameters of the network, think of a workaround for topological parameters
-#def DropAndTest():
+#TODO: Automate drops and tests until certain point
