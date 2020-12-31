@@ -23,10 +23,11 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="550d34b0c359ac017326a47fb449df6c95b17b18" />
+        <entry key="$PROJECT_DIR$" value="fa7d6871e9fb9bafc9a7b8e42d724686b6973d5a" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="ProjectId" id="1mNdQv4dbs6LmHdETNDgGFXo7tn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -69,6 +70,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Main" />
         <item itemvalue="Python.Main" />
         <item itemvalue="Python.Main" />
         <item itemvalue="Python.Main" />
@@ -148,7 +150,23 @@
     <state x="991" y="259" key="Vcs.Push.Dialog.v2" timestamp="1609342420109">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="991" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609342420109" />
+    <state width="1899" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609350284716" />
+    <state x="718" y="245" key="RollbackChangesDialog" timestamp="1609408012577">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="718" y="245" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609408012577" />
+    <state x="0" y="165" key="SettingsEditor" timestamp="1609407688000">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1609407688000" />
+    <state x="807" y="442" key="VCS.ChangelistChooser" timestamp="1609408840922">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="807" y="442" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1609408840922" />
+    <state x="287" y="245" key="Vcs.Push.Dialog.v2" timestamp="1609407974728">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="287" y="245" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609407974728" />
     <state x="1072" y="260" key="VcsDiffUtil.ChangesDialog" timestamp="1609342380456">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
