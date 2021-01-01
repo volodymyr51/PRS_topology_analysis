@@ -22,7 +22,7 @@ def Cost(MA, MD):
     return len(MA) * Diameter(MD) * Degree(MA)
 
 
-
+@njit
 def ToDistanceMatrix(MA):
     distance = np.zeros(shape=(len(MA), len(MA)), dtype=np.int64)
     distance = np.copy(MA)
@@ -114,5 +114,37 @@ def PrintProperties(step, cluster):
     C = Cost(cluster, dist)
     T = Traffic(cluster, dist)
     print(
-      "Step {}: Nodes {}, Diameter: {}, Degree {}, Average Diameter {}, Cost {}, Traffic {}".format(step, len(cluster),
+      "Step {}: Nodes {}, Diameter: {}, Degree {}, Average Diameter {:.2f}, Cost {}, Traffic {:.2f}".format(step, len(cluster),
                                                                                                     D, S, AvgD, C, T))
+
+
+def GetPropertiesString(step, cluster):
+    dist = ToDistanceMatrix(cluster)
+    D = Diameter(dist)
+    S = Degree(cluster)
+    AvgD = AverageDiameter(dist)
+    C = Cost(cluster, dist)
+    T = Traffic(cluster, dist)
+    return  "Step {}: Nodes {}, Diameter: {}, Degree {}, Average Diameter {:.2f}, Cost {}, Traffic {:.2f}".format(step,
+                                                                                         len(cluster), D, S, AvgD, C,T)
+
+
+@njit
+def massive_shl(number, digits):
+  if(number * 7 < 7 ** digits):
+    return (number * 7, number * 7 + 1, number * 7 + 2, number * 7 + 3, number * 7 + 4, number * 7 + 5, number * 7 + 6)
+  elif (number * 7 - 2 * 7 ** digits < 0):
+    return (number * 7 - 2 * 7 ** digits, number * 7 - 2 * 7 ** digits + 1, number * 7 - 2 * 7 ** digits + 2, number * 7 - 2 * 7 ** digits + 3, number * 7 - 2 * 7 ** digits + 4, number * 7 - 2 * 7 ** digits + 5,
+            number * 7 - 2 * 7 ** digits + 6)
+  elif (number * 7 - 3 * 7 ** digits < 0):
+    return (number * 7 - 3 * 7 ** digits, number * 7 - 3 * 7 ** digits + 1, number * 7 - 3 * 7 ** digits + 2, number * 7 - 3 * 7 ** digits + 3, number * 7 - 3 * 7 ** digits + 4, number * 7 - 3 * 7 ** digits + 5,
+            number * 7 - 3 * 7 ** digits + 6)
+  elif (number * 7 - 4 * 7 ** digits < 0):
+    return (number * 7 - 4 * 7 ** digits, number * 7 - 4 * 7 ** digits + 1, number * 7 - 4 * 7 ** digits + 2, number * 7 - 4 * 7 ** digits + 3, number * 7 - 4 * 7 ** digits + 4, number * 7 - 4 * 7 ** digits + 5,
+            number * 7 - 4 * 7 ** digits + 6)
+  elif (number * 7 - 5 * 7 ** digits < 0):
+    return (number * 7 - 5 * 7 ** digits, number * 7 - 5 * 7 ** digits + 1, number * 7 - 5 * 7 ** digits + 2, number * 7 - 5 * 7 ** digits + 3, number * 7 - 5 * 7 ** digits + 4, number * 7 - 5 * 7 ** digits + 5,
+            number * 7 - 5 * 7 ** digits + 6)
+  else:
+    return (number * 7 - 6 * 7 ** digits, number * 7 - 6 * 7 ** digits + 1, number * 7 - 6 * 7 ** digits + 2, number * 7 - 6 * 7 ** digits + 3, number * 7 - 6 * 7 ** digits + 4, number * 7 - 6 * 7 ** digits + 5,
+            number * 7 - 6 * 7 ** digits + 6)

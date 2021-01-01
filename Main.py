@@ -1,17 +1,19 @@
 import numpy as np
 import Math
 import Topologies.TestTopology
+import Topologies.MassivelyExcessDeBrujin
 import Modelling
 # LLVM compiler
 from numba import njit
 
+def PrintResults(resArray):
+    for res in resArray:
+        print(res)
+
 
 if __name__ == "__main__":
-    MA, next = Math.FloydPathReconstruct(Topologies.TestTopology.cluster)
-    print(next)
-    betw = Math.Betweeness(next)
-    print(betw)
-    Math.PrintProperties(1, Topologies.TestTopology.cluster)
-    print(np.argmax(betw))
-    MB = Modelling.DropAndTest(Topologies.TestTopology.cluster, betw)
-    print(MB)
+    cluster = Topologies.MassivelyExcessDeBrujin.MassivelyExcessDeBruijn(3)
+    Math.PrintProperties(3, cluster)
+    betweeness = Math.Betweeness(cluster)
+    res = Modelling.TestScenarios(cluster, betweeness, ceiling=0.2)
+    PrintResults(res)
