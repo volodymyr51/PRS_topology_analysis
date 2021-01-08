@@ -1,7 +1,6 @@
 import numpy as np
 import Math
-import Topologies.TestTopology
-import Topologies.MassivelyExcessDeBrujin
+from Topologies import TestTopology, MassivelyExcessDeBrujin, TernaryDebrujin
 import Modelling
 # LLVM compiler
 from numba import njit
@@ -12,8 +11,10 @@ def PrintResults(resArray):
 
 
 if __name__ == "__main__":
-    cluster = Topologies.MassivelyExcessDeBrujin.MassivelyExcessDeBruijn(3)
-    Math.PrintProperties(3, cluster)
+    Math.PrintProperties(1, MassivelyExcessDeBrujin.MassivelyExcessDeBruijn(4))
+
+    cluster = MassivelyExcessDeBrujin.MassivelyExcessDeBruijn(4)
+    Math.PrintProperties(8, cluster)
     betweeness = Math.Betweeness(cluster)
-    res = Modelling.TestScenarios(cluster, betweeness, ceiling=0.2)
+    res = Modelling.TestScenarios(cluster, betweeness, ceiling=0.1)
     PrintResults(res)

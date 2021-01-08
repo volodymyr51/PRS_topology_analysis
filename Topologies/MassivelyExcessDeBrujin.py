@@ -15,7 +15,7 @@ def MassivelyExcessDeBruijn(step):
 
 def TestMassivelyExcessDeBruijn():
   for step in range(2, 15):
-    cluster = Math.MassivelyExceessDeBruijn(step)
+    cluster = MassivelyExcessDeBruijn(step)
     dist = Math.ToDistanceMatrix(cluster)
     D = Math.Diameter(dist)
     S = Math.Degree(cluster)
@@ -25,3 +25,12 @@ def TestMassivelyExcessDeBruijn():
     print(
       "Step {}: Nodes {}, Diameter: {}, Degree {}, Average Diameter {}, Cost {}, Traffic {}".format(step, len(cluster),
                                                                                                     D, S, AvgD, C, T))
+@njit(parallel=True)
+def TernaryExcessDeBruijn(step):
+  debrujin_cluster = np.zeros(shape=((5**step), (5**step)), dtype=np.int64)
+  for i in range(0, 5 ** step):
+    shl = Math.ternaryexcess_shl(i, step)
+    for s in shl:
+      debrujin_cluster[i, s] = 1
+      debrujin_cluster[s, i] = 1
+  return debrujin_cluster

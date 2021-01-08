@@ -114,7 +114,7 @@ def PrintProperties(step, cluster):
     C = Cost(cluster, dist)
     T = Traffic(cluster, dist)
     print(
-      "Step {}: Nodes {}, Diameter: {}, Degree {}, Average Diameter {:.2f}, Cost {}, Traffic {:.2f}".format(step, len(cluster),
+      "Step {}: Nodes {}, Diameter: {}, Degree {}, Average Diameter {:.5f}, Cost {}, Traffic {:.5f}".format(step, len(cluster),
                                                                                                     D, S, AvgD, C, T))
 
 
@@ -125,7 +125,7 @@ def GetPropertiesString(step, cluster):
     AvgD = AverageDiameter(dist)
     C = Cost(cluster, dist)
     T = Traffic(cluster, dist)
-    return  "Step {}: Nodes {}, Diameter: {}, Degree {}, Average Diameter {:.2f}, Cost {}, Traffic {:.2f}".format(step,
+    return  "Step {}: Nodes {}, Diameter: {}, Degree {}, Average Diameter {:.5f}, Cost {}, Traffic {:.5f}".format(step,
                                                                                          len(cluster), D, S, AvgD, C,T)
 
 
@@ -148,3 +148,23 @@ def massive_shl(number, digits):
   else:
     return (number * 7 - 6 * 7 ** digits, number * 7 - 6 * 7 ** digits + 1, number * 7 - 6 * 7 ** digits + 2, number * 7 - 6 * 7 ** digits + 3, number * 7 - 6 * 7 ** digits + 4, number * 7 - 6 * 7 ** digits + 5,
             number * 7 - 6 * 7 ** digits + 6)
+
+@njit
+def ternaryexcess_shl(number, digits):
+  if(number * 5 < 5 ** digits):
+    return (number * 5, number * 5 + 1, number * 5 + 2, number * 5 + 3, number * 5 + 4)
+  elif (number * 5 - 2 * 5 ** digits < 0):
+    return (number * 5 - 2 * 5 ** digits, number * 5 - 2 * 5 ** digits + 1, number * 5 - 2 * 5 ** digits + 2, number * 5 - 2 * 5 ** digits + 3, number * 5 - 2 * 5 ** digits + 4)
+  elif (number * 5 - 3 * 5 ** digits < 0):
+    return (number * 5 - 3 * 5 ** digits, number * 5 - 3 * 5 ** digits + 1, number * 5 - 3 * 5 ** digits + 2, number * 5 - 3 * 5 ** digits + 3, number * 5 - 3 * 5 ** digits + 4)
+  else:
+    return (number * 5 - 4 * 5 ** digits, number * 5 - 4 * 5 ** digits + 1, number * 5 - 4 * 5 ** digits + 2, number * 5 - 4 * 5 ** digits + 3, number * 5 - 4 * 5 ** digits + 4)
+
+@njit
+def ternary_shl(number, digits):
+  if (number * 3 < 3 ** digits):
+      return (number * 3, number * 3 + 1, number * 3 + 2)
+  elif (number * 3 - 2 * 3 ** digits < 0):
+      return (number * 3 - 3 ** digits, number * 3 - 3 ** digits + 1, number * 3 - 3 ** digits + 2)
+  else:
+      return (number * 3 - 2 * 3 ** digits, number * 3 - 2 * 3 ** digits + 1, number * 3 - 2 * 3 ** digits + 2)
