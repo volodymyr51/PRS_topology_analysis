@@ -34,3 +34,16 @@ def TernaryExcessDeBruijn(step):
       debrujin_cluster[i, s] = 1
       debrujin_cluster[s, i] = 1
   return debrujin_cluster
+
+def TestTernaryExcessDeBruijn():
+  for step in range(1, 6):
+    cluster = TernaryExcessDeBruijn(step)
+    dist = Math.ToDistanceMatrix(cluster)
+    D = Math.Diameter(dist)
+    S = Math.Degree(cluster)
+    AvgD = Math.AverageDiameter(dist)
+    C = Math.Cost(cluster, dist)
+    T = Math.Traffic(cluster, dist)
+    print(
+      "Step {}: Nodes {}, Diameter: {}, Degree {}, Average Diameter {}, Cost {}, Traffic {}".format(step, len(cluster),
+                                                                                                    D, S, AvgD, C, T))

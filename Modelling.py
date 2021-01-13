@@ -24,4 +24,5 @@ def TestScenarios(MA, betweeness, ceiling=0.1):
         MA = np.delete(MA, max, 1)
         betweeness = np.delete(betweeness, max, 0)
         res.append(Math.GetPropertiesString(-1, MA))
+        res.append(" Removed node: {}".format(Math.ConvertFromBaseSevenToExcessive(Math.ConvertToBase(max, 7))))
     return res

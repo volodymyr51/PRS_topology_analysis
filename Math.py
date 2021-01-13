@@ -76,12 +76,12 @@ def FloydPathReconstruct(MA):
             next[j, i] = next[i, j]
     return distance, next
 
-
+'''
 def Betweeness(MA):
     betweeness = [np.count_nonzero(MA == i) for i in range(len(MA))]
     return betweeness
-
-
+'''
+@njit
 def ToBetweenessVector(MA):
     distance = np.zeros(shape=(len(MA), len(MA)), dtype=np.int64)
     distance = np.copy(MA)
@@ -128,6 +128,46 @@ def GetPropertiesString(step, cluster):
     return  "Step {}: Nodes {}, Diameter: {}, Degree {}, Average Diameter {:.5f}, Cost {}, Traffic {:.5f}".format(step,
                                                                                          len(cluster), D, S, AvgD, C,T)
 
+def ConvertToBase(num, base):
+    q = num // base
+    r = num % base
+    if q == 0:
+        return str(r)
+    else:
+        return ConvertToBase(q, base) + str(r)
+
+def ConvertFromBaseSevenToExcessive(num):
+    res = ''
+    for s in str(num):
+        if s == '4':
+            res += ('T')
+        elif s == '5':
+            res += ('E')
+        elif s == '6':
+            res += ('Z')
+        else:
+            res += (s)
+    return res
+
+def ConvertFromBaseFiveToExcessive(num):
+    res = ''
+    for s in str(num):
+        if s == '3':
+            res += ('T')
+        elif s == '4':
+            res += ('E')
+        else:
+            res += (s)
+    return res
+
+def ConvertFromBaseThreeToExcessive(num):
+    res = ''
+    for s in str(num):
+        if s == '2':
+            res += ('T')
+        else:
+            res += (s)
+    return res
 
 @njit
 def massive_shl(number, digits):
