@@ -142,9 +142,9 @@ def ConvertFromBaseSevenToExcessive(num):
         if s == '4':
             res += ('T')
         elif s == '5':
-            res += ('E')
-        elif s == '6':
             res += ('Z')
+        elif s == '6':
+            res += ('E')
         else:
             res += (s)
     return res
@@ -155,7 +155,7 @@ def ConvertFromBaseFiveToExcessive(num):
         if s == '3':
             res += ('T')
         elif s == '4':
-            res += ('E')
+            res += ('Z')
         else:
             res += (s)
     return res
