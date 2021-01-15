@@ -86,10 +86,11 @@ def ToBetweenessVector(MA):
     distance = np.zeros(shape=(len(MA), len(MA)), dtype=np.int64)
     short_distance = np.zeros(shape=(len(MA), len(MA)), dtype=np.int64)
     distance = np.copy(MA)
+    short_distance = np.copy(MA)
     betweeness = np.zeros(shape=(len(MA)), dtype=np.int64)
     for i in range(len(MA)):
         for j in range(len(MA)):
-            if distance[i, j] == 0:
+            if distance[i, j] == 0 and i != j:
                 distance[i, j] = 9000000
 
     for k in range(len(MA)):
@@ -99,11 +100,15 @@ def ToBetweenessVector(MA):
                     distance[i, j] = distance[i, k] + distance[k, j]
                     short_distance[i, j] = distance[i, j]
 
+    print(short_distance)
+
     for k in range(len(MA)):
         for i in range(len(MA)):
             for j in range(len(MA)):
-                if (short_distance[i, j]) == (short_distance[i, k] + short_distance[k, j]):
+                if (short_distance[i, j]) == (short_distance[i, k] + short_distance[k, j]) and i != j and k != j and k != i:
                     betweeness[k] = betweeness[k] + 1
+                    if (i == 0 and j == 7):
+                        print(str(i) + " " + str(k)+ " " + str(j))
 
     for b in range(len(betweeness)):
         print(str(b) + ": " + str(betweeness[b]))

@@ -18,7 +18,7 @@ if __name__ == "__main__":
    # betweeness = Math.ToBetweenessVector(cluster)
 
    # Math.PrintProperties(1, TestTopology.cluster_1)
-    betweeness = Math.ToBetweenessVector(np.array(TestTopology.cluster_1))
-
+    betweeness = Math.ToBetweenessVector(np.array(TestTopology.cluster_2))
+    print(np.sum(betweeness))
     #res = Modelling.TestScenarios(cluster, betweeness, ceiling=0.3, coding=5)
     #PrintResults(res)
