@@ -11,10 +11,14 @@ def PrintResults(resArray):
 
 
 if __name__ == "__main__":
-    Math.PrintProperties(1, Topo.TernaryDebrujin(4))
+   # Math.PrintProperties(1, MEDB.TernaryExcessDeBruijn(2))
 
-    cluster = Topo.TernaryDebrujin(4)
-    Math.PrintProperties(8, cluster)
-    betweeness = Math.ToBetweenessVector(cluster)
-    res = Modelling.TestScenarios(cluster, betweeness, ceiling=0.3, coding=3)
-    PrintResults(res)
+   # cluster = MEDB.TernaryExcessDeBruijn(2)
+   # Math.PrintProperties(8, cluster)
+   # betweeness = Math.ToBetweenessVector(cluster)
+
+   # Math.PrintProperties(1, TestTopology.cluster_1)
+    betweeness = Math.ToBetweenessVector(np.array(TestTopology.cluster_1))
+
+    #res = Modelling.TestScenarios(cluster, betweeness, ceiling=0.3, coding=5)
+    #PrintResults(res)
