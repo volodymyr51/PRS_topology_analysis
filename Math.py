@@ -88,7 +88,7 @@ def ToBetweenessVector(MA):
     betweeness = np.zeros(shape=(len(MA)), dtype=np.int64)
     for i in range(len(MA)):
         for j in range(len(MA)):
-            if distance[i, j] == 0:
+            if distance[i, j] == 0 and i != j:
                 distance[i, j] = 9000000
 
     for k in range(len(MA)):
